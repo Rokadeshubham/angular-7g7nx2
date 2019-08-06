@@ -1,0 +1,26 @@
+<form [formGroup]="studentForm" (ngSubmit)="onFormSubmit()">
+<table>
+  <!-- <tr>
+        <td>RollNo</td>
+  <td>  <input formControlName="RollNo"></td>
+  </tr> -->
+  <tr>
+    <td>FirstName</td>
+  <td>  <input formControlName="FirstName"></td>
+  </tr>
+  <tr>
+    <td>LastName</td>
+      <td><input formControlName="LastName"></td>
+  </tr>
+  <tr>
+    <td>Subject</td>
+  <td><input formControlName="Subject"></td>
+  </tr>
+  <tr>
+    <td>
+      <button>Submit</button>
+    </td>
+  </tr>
+</table>
+
+</form>
