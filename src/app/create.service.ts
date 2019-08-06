@@ -20,7 +20,7 @@ export class CreateService {
     return this._http.post<Insert>(this.url,insert, options);
   }
 
-  GetStudents(){
-    return this._http.get("http://localhost:33953/api/Home");
+  GetStudents():Observable<any>{
+    return this._http.get<any>("http://localhost:33953/api/Home");
   }
 }

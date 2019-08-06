@@ -1,3 +1,4 @@
+<h2>Add Student Info</h2>
 <form [formGroup]="studentForm" (ngSubmit)="onFormSubmit()">
 <table>
   <!-- <tr>
@@ -24,3 +25,21 @@
 </table>
 
 </form>
+
+
+<h2>All Students Info</h2>
+<table>
+  <tr>
+    <th>Id</th>
+        <th>FirstName</th>
+    <th>LastName</th>
+    <th>Subject</th>
+
+  </tr>
+  <tr *ngFor="let s of StudentInformation">
+    <td>{{s.RollNo}}</td>
+    <td>{{s.FirstName}}</td>
+    <td>{{s.LastName}}</td>
+    <td>{{s.Subject}}</td>
+  </tr>
+</table>

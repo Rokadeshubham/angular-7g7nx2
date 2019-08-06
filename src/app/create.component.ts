@@ -13,7 +13,7 @@ export class CreateComponent  {
   studentForm:FormGroup;
   datasaved=true;
   constructor(private formbuilder:FormBuilder,private _service:CreateService){
-
+    _service.GetStudents().subscribe(s=>this.StudentInformation=s);
   }
   ngOnInit(){
     this.studentForm = this.formbuilder.group({
@@ -33,4 +33,9 @@ export class CreateComponent  {
     this.studentForm.reset();
   }
 
+  public StudentInformation = [];
+
+StudentList(){
+  
+}
 }
