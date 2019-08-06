@@ -48,6 +48,9 @@ export class CreateComponent  {
   update(insert:Insert){
     this._service.UpdateStudent(insert).subscribe();
   }
-
+//Delete
+OnDelete(e){
+    this._service.Delete(e).subscribe();
+}
 
 }

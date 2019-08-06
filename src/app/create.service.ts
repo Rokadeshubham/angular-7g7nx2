@@ -32,4 +32,12 @@ export class CreateService {
     };
     return this._http.put<Insert>(this.url,insert,options);
   }
+  Delete(e:number):Observable<any>{
+ let httpHeaders = new HttpHeaders()
+    
+    let options ={
+      headers:httpHeaders
+    };
+    return this._http.delete<any>("http://localhost:33953/api/Home/"+e,options);
+  }
 }
