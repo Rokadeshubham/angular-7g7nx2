@@ -1,5 +1,5 @@
 export class Insert{
-// RollNo:number;
+RollNo:number;
 FirstName:string;
 LastName:string;
 Subject:string

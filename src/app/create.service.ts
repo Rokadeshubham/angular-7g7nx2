@@ -23,4 +23,13 @@ export class CreateService {
   GetStudents():Observable<any>{
     return this._http.get<any>("http://localhost:33953/api/Home");
   }
+
+  UpdateStudent(insert:Insert):Observable<Insert>{
+    let httpHeaders = new HttpHeaders()
+    .set('Content-Type','application/json');
+    let options ={
+      headers:httpHeaders
+    };
+    return this._http.put<Insert>(this.url,insert,options);
+  }
 }
