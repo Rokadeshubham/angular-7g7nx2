@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
-  Product =[
-    {id:1,name:"KGF",category:"action"},
-    {id:2,name:"Bang Bang",category:"action"}];
+  
 }
