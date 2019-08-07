@@ -32,8 +32,8 @@
 
 <h2>SearchInfoById</h2>
 <input type="number" #id>
-<input type="button" value="Search" (click)="GetInfoById(id.value)" >
-<table >
+<input type="button" value="Search" (click)="GetInfoById(id.value);toggle()">
+<table *ngIf="show_dialog">
   <tr>
     <th>Id</th>
     <th>FirstName</th>

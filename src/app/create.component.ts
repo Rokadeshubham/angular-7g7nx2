@@ -65,5 +65,9 @@ public InfoById = [];
 GetInfoById(id:number){
   this._service.GetStudentById(id).subscribe(s=>this.InfoById=s);
 }
-
+//Hide
+  public show_dialog : boolean = false;
+  toggle(){
+    this.show_dialog = !this.show_dialog;
+  }
 }
