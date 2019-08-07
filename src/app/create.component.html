@@ -1,3 +1,6 @@
+
+
+
 <h2>Add Student Info</h2>
 <form [formGroup]="studentForm" (ngSubmit)="onFormSubmit()">
 <table>
@@ -27,6 +30,24 @@
 
 </form>
 
+<h2>SearchInfoById</h2>
+<input type="number" #id>
+<input type="button" value="Search" (click)="GetInfoById(id.value)" >
+<table >
+  <tr>
+    <th>Id</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Subject</th>
+
+  </tr>
+  <tr>
+    <td>{{InfoById.RollNo}}</td>
+    <td>{{InfoById.FirstName}}</td>
+    <td>{{InfoById.LastName}}</td>
+    <td>{{InfoById.Subject}}</td>
+  </tr>
+</table>
 
 <h2>All Students Info</h2>
 <table>
